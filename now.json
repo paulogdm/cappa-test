@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "name": "cappa",
+  "env": {
+    "NODE_ENV": "staging"
+  },
+  "builds": [
+    { "src": "package.json", "use": "@now/next" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/$1" }
+  ],
+  "public": true
+}
